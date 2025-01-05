@@ -1,0 +1,77 @@
+body {
+    font-family: 'Roboto', sans-serif; /* Elegant Font */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("images_/background.jpg"); /* Ensure this path is correct */
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(217, 121, 203, 0.9); /* Semi-transparent background for better readability */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(218, 117, 184, 0.5);
+}
+
+.coins {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+
+.coin {
+    margin: 0 10px;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    margin: 20px auto;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(120, 90, 227);
+    border: 2px solid #f40b8b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    cursor: pointer;
+    transition: background-color 0.5s, transform 0.3s;
+}
+
+.cell:hover {
+    background-color: #70c7df;
+}
+
+.cell.X {
+    background-image: url("images_/images.jpg"); /* Ensure this path is correct */
+    background-size: cover;
+    background-position: center;
+}
+
+.cell.O {
+    background-image: url("images_/—Pngtree—the alphabet character o with_15453963.png"); /* Ensure this path is correct */
+    background-size: cover;
+    background-position: center;
+}
+
+#status {
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.winner {
+    margin-top: 20px;
+    font-size: 2em;
+    color: green;
+    display: none; /* Hidden by default */
+}
